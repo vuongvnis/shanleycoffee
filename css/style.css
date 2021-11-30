@@ -1,0 +1,371 @@
+/* link google font */
+
+
+/* custom variable css */
+:root{
+    --main-color:#d3ad7f;
+    --bg-color:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+    --white-color: #fff;
+    --black-color: #13131a;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'roboto', sans-serif ;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: aal .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.heading{
+    margin: 3rem 0;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--white-color);
+
+}
+.heading span{
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+.btn{
+    padding: 1rem 2rem;
+    border: 1px solid var(--border);
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: var(--white-color);
+    background: var(--main-color);
+}
+.btn:hover{
+    color: var(--black-color);
+}
+section{
+    padding: 2rem 9%;
+}
+
+body{ 
+    background: var(--bg-color);
+    color: var(--white-color);
+}
+
+/* ============================= style header ============================ */
+.header{
+    padding: 2rem 9%;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    z-index: 1000;
+}
+.header .logo{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--white-color);
+}
+.header .logo span{
+    color: var(--main-color);
+}
+nav{
+    display: block;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1.5rem ;
+    color: var(--white-color);
+}
+.header .navbar a:hover{
+    color: var(--main-color);
+
+}
+.header .icons i{
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid var(--border);
+    background: var(--black-color);
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--white-color);
+}
+.header .icons i:hover{
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+/* ================================= style home =============================== */
+.home{
+    background: url(../images/home.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.home .home-content{
+    width: 50rem;
+}
+.home .home-content h1{
+    font-size: 5rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+    line-height: 1.8;
+}
+.home .home-content p{
+    font-size:1.6rem;
+    color: var(--white-color);
+    line-height: 1.8;
+    padding-bottom: 5rem;
+}
+
+/* ==================== style about us =================== */
+.about .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    gap: 1.5rem;
+    
+}
+
+.about .container img{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 2rem;
+
+}
+.about .container .box h3{
+    font-size: 3rem;
+    color: var(--white-color);
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    line-height: 1.8;
+}
+.about .container .box p{
+    font-size: 1.5rem;
+    color: var(--white-color);
+    line-height: 1.8;
+    padding-bottom: 2.5rem;
+}
+
+/* ==================== style our menu ==================== */
+
+.our-menu .menu-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+.our-menu .menu-container .box{
+    border: var(--border);
+    padding-bottom: 7rem;
+}
+
+.our-menu .menu-container .box img{
+    margin: 1rem 0;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    
+}
+.our-menu .menu-container .box .title{
+    font-size: 2rem;
+    color: var(--white-color);
+    line-height: 1.8;
+}
+.our-menu .menu-container .box p{
+    font-size: 1.5rem;
+    color: var(--white-color);
+    line-height: 1.8;
+    padding-bottom: 1rem;
+}
+.our-menu .menu-container .box p span{
+    text-decoration: line-through;
+    font-size: 1rem;
+}
+
+
+
+/* ======================= dtyle products ============= */
+.products .container,
+.review .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.blogs .container .box,
+.products .container .box{
+    border: var(--border);
+    padding-bottom: 5rem;
+    
+}
+.products .container .box .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+   
+}
+.products .container .box  .icons i{
+    width: 5rem;
+    height: 5rem;
+    border: var(--border);
+    background: var(--black-color);
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--white-color);
+    margin: 0 .8rem;
+}
+.products .container .box .icons i:hover{
+    background: var(--main-color);
+    cursor: pointer;
+}
+.products .container .box img{
+    margin: 1rem 0;
+    width: 20rem;
+    height: 20rem;
+}
+.products .container .box h3{
+    font-size: 2.2rem;
+    line-height: 1.8;
+
+}
+.products .container .box .icon-like i{
+    font-size: 1rem;
+    padding: 0 .2rem;
+}
+.products .container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+.products .container .box p span{
+    font-size: 1.2rem;
+    text-decoration: line-through;
+   
+}
+
+/* ================== style review =================== */
+.review .container .box{
+    border: var(--border);
+    padding: 0 2rem;
+    padding-bottom: 5rem;
+}
+.review .container .box .quote{
+    padding: 2rem 0;
+}
+.review .container .box .descreption{
+    font-size: 1.5rem;
+    line-height: 1.5;
+
+}
+.review .container .box .name{
+    font-size: 2rem;
+    line-height: 1.5;
+}
+.review .container .box .user{
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem 0;
+    border-radius: 50%;
+} 
+.review .container .box .icon-like i{
+    padding: .3rem .3rem;
+    font-size: 1rem;
+}
+
+
+
+
+/*  ========================= style blogs ================ */
+.blogs .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    color: var(--white-color);
+}
+
+.blogs .container .box img{
+    width: 100%;
+}
+.blogs .container .box .title{
+    padding: 0 2rem;
+}
+.blogs .container .box .title h3{
+    font-size: 2.2rem;
+    line-height: 1.5;
+    font-weight: normal;
+}
+.blogs .container .box .title .admin{
+    font-size: 1.8rem;
+    color: var(--main-color);
+    line-height: 1.8;
+    font-weight: 700;
+}
+.blogs .container .box .title .des{
+    font-size: 1.7rem;
+    line-height: 1.8;
+    padding-bottom: 1.8rem;
+}
+
+
+
+
+/* ================= style footer =============== */
+
+
+footer{
+    padding: 2rem 9%;
+}
+footer .container{
+   text-align: center;    
+}
+footer .container .footer-icons{
+    padding-bottom: 4rem;
+}
+footer .container .footer-icons i{
+    width: 5rem;
+    height: 5rem;
+    border: var(--border);
+    background: var(--black-color);
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--white-color);
+}
+footer .container .footer-icons i:hover{
+    background:var(--main-color);
+}
+footer .container .footer-links{
+    padding-bottom: 4rem;
+}
+footer .container .footer-links a{
+    font-size: 1.7rem;
+    margin: 0 1.5rem ;
+    padding: 1.5rem 1.5rem;
+    color: var(--white-color);
+    border: var(--border);
+}
+footer .container .footer-links a:hover{
+    background: var(--main-color);
+}
+footer .container .auther p{
+    color: var(--white-color);
+    font-size: 2.5rem;
+}
